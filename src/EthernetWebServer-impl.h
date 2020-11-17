@@ -59,6 +59,8 @@ EthernetWebServer::EthernetWebServer(int port)
   , _contentLength(0)
   , _chunked(false)
 {
+	_postArgs = NULL;
+	_currentUpload = NULL;
 }
 
 EthernetWebServer::~EthernetWebServer() 
